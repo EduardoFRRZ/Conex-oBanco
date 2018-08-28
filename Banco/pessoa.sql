@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 28-Ago-2018 às 00:58
+-- Generation Time: 28-Ago-2018 às 16:29
 -- Versão do servidor: 10.1.25-MariaDB
 -- PHP Version: 7.1.7
 
@@ -36,20 +36,6 @@ CREATE TABLE `pessoa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Extraindo dados da tabela `pessoa`
---
-
-INSERT INTO `pessoa` (`id`, `nome`, `idade`, `altura`) VALUES
-(1, 'Eduardo', 11, 1.9),
-(2, 'Joao', 12, 1.56),
-(3, 'Pedro', 33, 1.89),
-(4, 'fgdgfdg', 34, 1.9),
-(5, 'NOW()', 3, 123),
-(6, '2018-08-27 19:49:49', 0, 0),
-(7, '2018-08-27', 0, 0),
-(8, '19:50:52', 0, 0);
-
---
 -- Indexes for dumped tables
 --
 
@@ -67,7 +53,7 @@ ALTER TABLE `pessoa`
 -- AUTO_INCREMENT for table `pessoa`
 --
 ALTER TABLE `pessoa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;COMMIT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

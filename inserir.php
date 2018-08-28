@@ -11,7 +11,7 @@
 	$pessoa = "insert into pessoa values ('$id','$nome','$idade','$altura')";
 	$resultado = mysqli_query($mysqli,$pessoa);
 
-	//$redirect = "http://localhost:8080/Estudando_Banco/";
- 	//header("location:$redirect");
+	$redirect = "http://localhost:8080/Estudando_Banco/";
+ 	header("location:$redirect");
 
 ?>

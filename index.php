@@ -20,6 +20,7 @@
 				<div class="col">
 
 					<div class="form">
+						<h4 align="center">Cadastro Pessoa</h4>
 						<form method="POST" action="inserir.php">
 								
 							</br></br>
@@ -49,29 +50,30 @@
 							</br></br>
 
 							<input class="btn btn-primary btn-lg" type="submit" value="Enviar">
-							<input class="btn btn-danger btn-lg" type="submit" value="Limpar tabela">
-
 						</form>
+
 					</div>
 				</div>
 
 				<div class="col">
 
-					<table border="1">
+					<table class="table table-striped table-dark">
 					
 						<tr>
-							<td>Código</td>
-							<td>Nome</td>
-							<td>Idade</td>
-							<td>Altura</td>
+							<td scope="col"><form action="limpar.php"><input class="btn btn-danger btn-sm" type="submit" value="Limpar"></form></td>
+							<td scope="col">Código</td>
+							<td scope="col">Nome</td>
+							<td scope="col">Idade</td>
+							<td scope="col">Altura</td>
 						</tr>
 						
 						<?php while($dado = $con->fetch_array()){ ?>
 						<tr>
-						<td><?php echo $dado["id"]; ?></td>
-						<td><?php echo $dado["nome"]; ?></td>
-						<td><?php echo $dado["idade"]; ?></td>
-						<td><?php echo $dado["altura"]; ?></td>
+							<td>#</td>
+							<td><?php echo $dado["id"]; ?></td>
+							<td><?php echo $dado["nome"]; ?></td>
+							<td><?php echo $dado["idade"]; ?></td>
+							<td><?php echo $dado["altura"]; ?></td>
 						</tr>
 						<?php } ?>
 					</table>
