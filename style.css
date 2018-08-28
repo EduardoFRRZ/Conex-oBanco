@@ -1,6 +1,13 @@
-.form{
-	border-radius: 5px;
+.form{	
     background-color: #f2f2f2;
     padding: 20px;
-    margin: 30px 1277px 30px 30px;
+    margin: auto;
+}
+
+table{
+	text-align: center;
+	background-color: silver;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
 }
